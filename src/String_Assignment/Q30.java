@@ -10,6 +10,7 @@ public class Q30 {
 
         char ch;
 
+
         String q = "";
         String s1=s+" ";
 
