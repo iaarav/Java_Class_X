@@ -9,6 +9,7 @@ public class Q30 {
         String s = sc.nextLine();
 
         char ch;
+
         String q = "";
         String s1=s+" ";
 
