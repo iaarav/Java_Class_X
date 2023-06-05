@@ -7,5 +7,30 @@ public class Q37 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a String: ");
         String s = sc.nextLine();
+
+        String s1=s+" ", q="",lword="";
+        int lw=0;
+
+        char ch;
+        for (int i = 0; i<s1.length(); i++) {
+            ch=s1.charAt(i);
+
+            if (ch==' '){
+                if (q.length()>lw){
+                    lword =q;
+                    lw=q.length();
+                }
+                q="";
+
+            }
+            else {
+                q=q+ch;
+
+            }
+        }
+
+        System.out.println("Original String: "+s);
+        System.out.println("Longest Word: "+lword);
+        System.out.println("Number of characters: "+lw);
     }
 }
