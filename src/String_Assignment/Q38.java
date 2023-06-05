@@ -1,11 +1,16 @@
 package String_Assignment;
 
-import java.util.Scanner;
 
 public class Q38 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a String: ");
-        String s = sc.nextLine();
+
+        String s = "26 January is celebrated as Republic Day";
+
+        String p = s.replace("26","15");
+        String q = p.replace( "January", "August");
+        String r = q.replace("Republic", "Independence");
+
+        System.out.println("Original String: "+s);
+        System.out.println("New Required String: "+r);
     }
 }
