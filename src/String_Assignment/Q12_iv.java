@@ -24,5 +24,15 @@ public class Q12_iv {
             System.out.println();
         }
 
+        System.out.println();
+
+        // Using Substring
+        for (int i = 0; i < l; i++) {
+            System.out.println(s.substring(0, i + 1));
+        }
+        for (int i=s.length()-1; i>=0 ; i--){
+            System.out.println(s.substring(0,i));
+        }
+
     }
 }

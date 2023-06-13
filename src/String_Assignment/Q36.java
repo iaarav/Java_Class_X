@@ -8,11 +8,29 @@ public class Q36 {
         System.out.println("Enter a String: ");
         String s = sc.nextLine();
         System.out.println("Enter the word to be replaced ");
-        String ow= sc.next();
+        String ow = sc.next();
         System.out.println("Enter the new word");
-        String nw= sc.next();
+        String nw = sc.next();
 
-        System.out.println("Original String: "+s );
-        System.out.println("New String: "+s.replace(ow,nw));
+        s = s + " ";
+        String q = "", r = "";
+        char ch;
+
+        for (int i = 0; i < s.length(); i++) {
+            ch = s.charAt(i);
+
+            if (ch == ' ') {
+                if (q.equalsIgnoreCase(ow)) {
+                    r = r + nw + " ";
+                }
+                else {
+                    r = r + q + " ";
+                }
+                q = "";
+            } else {
+                q = q + ch;
+            }
+        }
+        System.out.println("New String: " + r);
     }
 }

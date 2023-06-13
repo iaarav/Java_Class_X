@@ -10,9 +10,27 @@ public class Q12_iii {
         int l = s.length();
         String q = "";
 
-        for (int i = l-1; i >= 0; i--) {
-            q=(s.charAt(i))+q;
+        //without using nesting and substring
+        for (int i = l - 1; i >= 0; i--) {
+            q = (s.charAt(i)) + q;
             System.out.println(q);
+        }
+
+        System.out.println();
+
+        // using nesting
+        for (int i = l-1 ; i >=0; i--) {
+            for (int j=i; j<l ; j++){
+                System.out.print(s.charAt(j));
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        //using substring
+        for (int i = s.length() - 1; i >= 0; i--) {
+            System.out.println(s.substring(i));
         }
     }
 }

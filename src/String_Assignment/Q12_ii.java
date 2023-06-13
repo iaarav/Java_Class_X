@@ -9,11 +9,17 @@ public class Q12_ii {
         String s = sc.nextLine();
         int l = s.length();
 
+        // Without substring
         for (int i = l-1; i >= 0; i--) {
             for (int j = 0; j <= i; j++) {
                 System.out.print(s.charAt(j));
             }
             System.out.println();
+        }
+
+        // Without nesting (using substring)
+        for (int i=s.length()-1; i>=0 ; i--){
+            System.out.println(s.substring(0,i+1));
         }
     }
 }
