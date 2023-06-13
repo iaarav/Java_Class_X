@@ -7,5 +7,7 @@ public class Q49 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a String: ");
         String s = sc.nextLine();
+
+        System.out.println("Required String: "+s.replace('0','O'));
     }
 }
