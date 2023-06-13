@@ -17,10 +17,10 @@ public class Q47 {
         }
 
         if (q.equalsIgnoreCase(s)){
-            System.out.println("Palindrome String");
+            System.out.println("Palindrome Word");
         }
         else {
-            System.out.println("Not a Palindrome String");
+            System.out.println("Not a Palindrome Word");
         }
     }
 }
