@@ -1,8 +1,8 @@
-package String_Assignment;
+package String_Assignment.Previous_Year;
 
 import java.util.Scanner;
 
-public class Additional_Question_1 {
+public class ICSE_2022 {
     public static void main(String[] args) {
         // Sample Input: WelCoMe_2022
         // Sample output: wELcOmE_2022               [ICSE 2022]
