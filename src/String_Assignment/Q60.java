@@ -15,18 +15,20 @@ public class Q60 {
             ch=s.charAt(i);
 
             if (ch==' '){
-                q="";
+
                 if (q.length()>4){
-                    r=r+q;
+                    r=r+q+" ";
                 }
                 else {
                     continue;
                 }
+                q="";
             }
             else {
                 q=q+ch;
             }
+
         }
-        System.out.println("Final String is: "+q);
+        System.out.println("Final String is: "+r);
     }
 }
