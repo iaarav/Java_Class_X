@@ -17,8 +17,23 @@ public class ICSE_2017 {
          [ICSE 2016]
          */
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter First String: ");
-        String s = sc.nextLine();
+        System.out.println("Enter a word: ");
+        String s = sc.next();
 
+        char ch;
+        String q = "";
+
+        for (int i = 0; i < s.length(); i++) {
+            ch = s.charAt(i);
+            q = ch + q;
+        }
+
+        if (q.equalsIgnoreCase(s)) {
+            System.out.println("Palindrome Number");
+        } else if (s.charAt(0) == s.charAt(s.length() - 1)) {
+            System.out.println("Special Number");
+        } else {
+            System.out.println("Ordinary Number! Not a special number or a palindrome number.");
+        }
     }
 }
