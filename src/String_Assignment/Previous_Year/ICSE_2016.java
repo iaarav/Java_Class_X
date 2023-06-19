@@ -2,7 +2,7 @@ package String_Assignment.Previous_Year;
 
 import java.util.Scanner;
 
-public class ICSE_2017 {
+public class ICSE_2016 {
     public static void main(String[] args) {
 
         /* WAP to accept a word. Check and print whether the word is a palindrome or only special word
