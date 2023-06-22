@@ -7,5 +7,11 @@ public class Q67 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a String: ");
         String s = sc.nextLine();
+        System.out.println("Enter the word to be replaced: ");
+        String p = sc.next();
+        System.out.println("Enter the new word: ");
+        String q= sc.next();
+
+        System.out.println("Modified String: "+s.replace(p,q));
     }
 }

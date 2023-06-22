@@ -7,5 +7,21 @@ public class Q68 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a String: ");
         String s = sc.nextLine();
+
+        s=s+" ";
+        char ch;
+        String q="",r="";
+        for (int i=0; i<s.length();i++){
+            ch=s.charAt(i);
+
+            if (ch==' '){
+                r=r+ q.substring(1) + " ";
+                q="";
+            }
+            else {
+                q=q+ch;
+            }
+        }
+        System.out.println("Required string: "+r);
     }
 }
