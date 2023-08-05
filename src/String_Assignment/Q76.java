@@ -7,5 +7,22 @@ public class Q76 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a String: ");
         String s = sc.nextLine();
+
+        String q="";
+        char ch;
+
+        for (int i = 0; i < s.length(); i++) {
+            ch = s.charAt(i);
+
+            if(Character.isUpperCase(ch)){
+                ch = Character.toLowerCase(ch);
+            }
+            else{
+                ch = Character.toUpperCase(ch);
+            }
+
+            q=q+ch;
+        }
+        System.out.println("The required String: "+q);
     }
 }
