@@ -17,7 +17,7 @@ public class ExampleQ1 {
     }
 
     // Neither Receiving a value nor returning it
-    public void Addd(){
+    public void Add(){
         System.out.println("Enter first number: ");
         int a = sc.nextInt();
         System.out.println("Enter second number: ");
@@ -37,6 +37,6 @@ public class ExampleQ1 {
 
         System.out.println("Sum is: "+obj.add(p,q));
         Add(p,q);
-        obj.Addd();
+        obj.Add();
     }
 }
